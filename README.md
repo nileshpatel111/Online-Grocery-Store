@@ -17,6 +17,13 @@ Database: MongoDB
 Other Libraries: Tota11y, and HTML Validator
 Tools: MS Visual Code, MS Command Panel
 
+# To run this app in Docker Container
+1. Install Docker in Host Machine
+2. Go root folder of projects: C:\Online-Grocery-Store\
+3. Execute: Docker build -t node1 .
+4. Once build complete, Run the container: Docker run -d -p 3000:3000 node1
+5. Access the application: http://localhost:3000
+
 # System Configuration
 1. Install NodeJs 
 2. Install MongoDB 3.4 Stable Version
@@ -24,7 +31,8 @@ Tools: MS Visual Code, MS Command Panel
 4. Install NPM Packages
 
 # NPM Packages
-"bcrypt": "^1.0.2",
+"bcrypt": "^5.0.0",
+"window-popup": "^1.1.0",
 "body-parser": "^1.17.1",
 "connect-flash": "^0.1.1",
 "cookie-parser": "^1.4.3",
