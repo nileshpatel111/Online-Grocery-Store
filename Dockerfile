@@ -42,6 +42,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 
+RUN mongoimport --db db-grocery --collection products --file ./database/products.json
 
 EXPOSE 3000
 
