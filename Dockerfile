@@ -42,10 +42,10 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-RUN mongoimport --db db-grocery --collection products --file ./database/products.json
-
 EXPOSE 3000
 
 CMD mongod --fork --syslog; pm2-runtime app.js
+
+# RUN mongoimport --db db-grocery --collection products --file ./database/products.json
 
 
